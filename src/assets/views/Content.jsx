@@ -4,7 +4,7 @@ import OffcanvasComp from "../components/OffcanvasComp";
 const Content = () => {
   return (
     <div>
-      <OffcanvasComp></OffcanvasComp>
+      <OffcanvasComp Name={"Name"} BName={"Bname"}>Belso szoveg</OffcanvasComp>
     </div>
   );
 };

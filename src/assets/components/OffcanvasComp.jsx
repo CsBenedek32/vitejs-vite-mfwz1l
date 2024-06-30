@@ -1,6 +1,6 @@
 import React from "react";
 
-const OffcanvasComp = () => {
+const OffcanvasComp = ({children,Name,BName}) => {
   return (
     <>
       <button
@@ -10,7 +10,7 @@ const OffcanvasComp = () => {
         data-bs-target="#offcanvasWithBothOptions"
         aria-controls="offcanvasWithBothOptions"
       >
-        Enable both scrolling & backdrop
+        {BName}
       </button>
 
       <div
@@ -22,7 +22,7 @@ const OffcanvasComp = () => {
       >
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
-            Backdrop with scrolling
+           {Name}
           </h5>
           <button
             type="button"
@@ -33,7 +33,7 @@ const OffcanvasComp = () => {
         </div>
         <div class="offcanvas-body">
           <p>
-            Try scrolling the rest of the page to see this option in action.
+            {children}
           </p>
         </div>
       </div>
