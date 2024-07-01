@@ -3,7 +3,10 @@ import React from "react";
 const Layout = ({ children }) => {
   return (
     <>
-      <div className="fs-1">Layout</div>
+   
+      <section className="bg-primary position-relative ">
+        <div className="">asd</div>
+      </section>
       {children}
     </>
   );
